@@ -1,0 +1,181 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+body {
+    margin: 0 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo img {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear;
+    height: 60px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+span.appName {
+    font-size: 75px;
+    font-family: fantasy;
+    color: #ff0000b8;
+    position: relative;
+    top: 17px;
+    left: -30px;
+}
+
+.nav {
+    position: relative;
+    top: -30px;
+    right: 30px;
+    display: flex;
+    float: right;
+}
+
+.nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    float: right;
+    background: #61dafbad;
+    color: #003fff3d;
+    font-weight: bolder;
+    border-radius: 40px 30px 20px 10px;
+    box-shadow: 2px 2px 15px #6f5353;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.nav a:hover {
+    color: white;
+    background: #d20db9;
+}
+
+header {
+    border-bottom: 2px solid #61dafb;
+    background: azure;
+    height: 105px;
+}
+
+.contain {
+    background: url('./homeImage.jpg');
+    background-size: cover;
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+form.form {
+    background: #0000006b;
+    width: 30%;
+    height: 100%;
+    padding: 0 30px;
+    position: relative;
+    left: 20%;
+}
+
+label {
+    font-size: 18px;
+    color: lavender;
+    text-shadow: 1px 3px 7px #81e5fb;
+    font-family: monospace;
+    padding: 0 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    border-radius: 20px 30px 40px 40px;
+    border: 2px solid white;
+    background: transparent;
+    color: #81e5fb;
+    font-size: 15px;
+    margin: 8px;
+    padding: 5px 15px;
+    letter-spacing: 0.15em;
+}
+
+input[type="password"] {
+    width: 90%;
+    border-radius: 20px 30px 40px 40px;
+    border: 2px solid white;
+    background: transparent;
+    color: #81e5fb;
+    font-size: 15px;
+    margin: 8px;
+    padding: 5px 15px;
+    letter-spacing: 0.15em;
+}
+
+input[type="submit"] {
+    border-radius: 20px 30px 40px 40px;
+    border: 2px solid white;
+    background: #d20db98c;
+    color: #81e5fb;
+    font-size: 15px;
+    padding: 5px 15px;
+    letter-spacing: 0.15em;
+    width: 70%;
+    cursor: pointer;
+}
+
+.submit {
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+input[type="submit"]:hover {
+    background: #81e5fb75;
+    color: #d20db9;
+    font-weight: bolder;
+}
+
+.images {
+    max-width: 40%;
+    height: 100%;
+    position: relative;
+    top: 170px;
+    left: 60px;
+    background: #228b2224;
+}
+
+.images img {
+    max-width: 20%;
+    padding: 5px;
+    border-radius: 48% 52% 26% 46%;
+}
