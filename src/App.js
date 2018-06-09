@@ -1,80 +1,57 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import users from './users.jpg';
 import './App.css';
 
 
-const Images = function() {
-    return ( <
-        div className = 'images' >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
-        <
-        img src = { users }
-        alt = 'homeImages' / >
+// const Images = function () {
+//     return (
+//         <div className='images' >
+//             <img src={users} alt='homeImages' />
+//             <img src={users} alt='homeImages' />
+//             <img src={users} alt='homeImages' />
+//             <img src={users} alt='homeImages' />
+//             <img src={users} alt='homeImages' />
+//             <img src={users} alt='homeImages' />
+//             <img src={users} alt='homeImages' />
+//             <img src={users} alt='homeImages' />
+//         </div>
+//     )
+// }
 
-        <
-        /div>
+
+const Footer = function() {
+    return(
+        <div className='footer'>
+            
+        </div>
     )
 }
 
-
-
-
-const FormInputs = function() {
-    return ( <
-        form className = 'form' >
-        <
-        label > First Name: < /label>  <
-        input type = 'text' / > < br / >
-        <
-        label > Last Name: < /label> <
-        input type = 'text' / > < br / >
-        <
-        label > Email: < /label> <
-        input type = 'text' / > < br / >
-        <
-        label > Comfirm email: < /label> <
-        input type = 'text' / > < br / >
-        <
-        label > Country: < /label> <
-        input type = 'text' / > < br / >
-        <
-        label > Date Of Birth: < /label> <
-        input type = 'text' / > < br / >
-        <
-        label > Password: < /label> <
-        input type = 'password' / > < br / >
-        <
-        label > Confirm Password: < /label> <
-        input type = 'password' / >
-        <
-        div className = 'submit' >
-        <
-        input type = 'submit'
-        value = 'Sign Up' / >
-        <
-        /div> < /
-        form >
+const FormInputs = function () {
+    return (
+        <div className= 'form'>
+        <form>
+            <label> First Name: </label>
+            <input type='text' />
+            <label> Last Name: </label>
+            <input type='text' />
+            <label> Email: </label>
+            <input type='text' />
+            <label> Comfirm email: </label>
+            <input type='text' />
+            <label> Country: </label>
+            <input type='text' />
+            <label> Date Of Birth: </label>
+            <input type='text' />
+            <label> Password: </label>
+            <input type='password' />
+            <label> Confirm Password: </label>
+            <input type='password' />
+            <div className='submit'>
+                <input type='submit' value='Sign Up' />
+            </div>
+        </form>
+        </div>
     )
 }
 
@@ -85,41 +62,26 @@ class Neichatonation extends Component {
     // }
 
     render() {
-        return ( <
-            div >
+        return (
+            <div >
+                <header>
+                    <div className="logo" >
+                        <img src={logo} alt='logo' />
+                    </div>
+                    <span className="nav">
+                        <a href="google.com" title="sign in to your account" > Sign in </a>
+                        <a href="google.com" title="take a tour" > Tour </a>
+                        <a href="google.com" title="find out about us" > About </a>
+                        <a href="google.com" title="upgrade to enjoy features" > Upgrade </a>
+                    </span>
 
-            <
-            header >
-            <
-            div className = "logo" >
-            <
-            img src = { logo }
-            alt = 'logo' / >
-            <
-            /
-            div > <
-            span className = "nav" >
-            <
-            a href = "google.com"
-            title = "sign in to your account" > Sign in < /a>  <
-            a href = "google.com"
-            title = "take a tour" > Tour < /a>  <
-            a href = "google.com"
-            title = "find out about us" > About < /a>  <
-            a href = "google.com"
-            title = "upgrade to enjoy features" > Upgrade < /a> < /
-            span >
-
-            <
-            /header>  <
-            div className = 'contain' >
-            <
-            Images / >
-            <
-            FormInputs / >
-            <
-            /div> < /
-            div >
+                </header>
+                <div className='contain' >
+                    <FormInputs />
+                    {/* <Images /> */}
+                </div>
+                <Footer/>
+            </div>
 
         )
     }
