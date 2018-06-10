@@ -95,8 +95,7 @@ header {
 .logo h1 {
   font-family: 'Eater', cursive;
   font-size: 45px;
-  color: #f9a80b;
-  text-shadow: 2px 6px 6px #863838;
+  color: white;
   margin: 15px 0 0 0;
 }
 
@@ -192,7 +191,7 @@ input[type='submit']:hover {
 
 .footer {
   background: #1f022df0;
-  height: 90px;
+  height: 100px;
 }
 
 @media (max-width: 500px) {
